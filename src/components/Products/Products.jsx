@@ -14,7 +14,7 @@ const ProductsData = [
     id: 1,
     img: Img1,
     title: 'Boat Headphone',
-    price: '120',
+    price: '520',
     aosDelay: '0'
   },
   {

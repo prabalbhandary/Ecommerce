@@ -16,7 +16,7 @@ const ProductCard = ({data, handleOrderPopup}) => {
               </div>
               <div className='leading-7'>
                 <h2 className='font-semi-bold'>{data.title}</h2>
-                <h2 className='font-bold'>$ {data.price}</h2>
+                <h2 className='font-bold'>रु {data.price}</h2>
               </div>
             </div>
           ))
