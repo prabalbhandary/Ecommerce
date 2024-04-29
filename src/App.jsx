@@ -16,7 +16,6 @@ import Footer from "./components/Footer/Footer";
 import Popup from "./components/Popup/Popup";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const BannerData = {
   discount: "30% OFF",
