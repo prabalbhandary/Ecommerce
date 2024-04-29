@@ -18,9 +18,9 @@ const Popup = ({ orderPopup, handleOrderPopup }) => {
               </div>
             </div>
             <div className="mt-4">
-              <input type="text" placeholder="Name" className="form-input" />
-              <input type="email" placeholder="Email" className="form-input" />
-              <input type="text" placeholder="Address" className="form-input" />
+              <input type="text" placeholder="Name" className="form-input" required />
+              <input type="email" placeholder="Email" className="form-input" required />
+              <input type="text" placeholder="Address" className="form-input" required />
               <div className="flex justify-center">
                 <a href="/">
                   <Button
