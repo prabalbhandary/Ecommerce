@@ -3,6 +3,9 @@ import { IoCloseOutline } from "react-icons/io5";
 import Button from "../Shared/Button";
 
 const Popup = ({ orderPopup, handleOrderPopup }) => {
+  const handleClick = ()=>{
+    
+  }
   return (
     orderPopup && (
       <div>
@@ -21,14 +24,12 @@ const Popup = ({ orderPopup, handleOrderPopup }) => {
               <input type="text" placeholder="Name" className="form-input" required />
               <input type="email" placeholder="Email" className="form-input" required />
               <input type="text" placeholder="Address" className="form-input" required />
-              <div className="flex justify-center">
-                <a href="/">
+              <div className="flex justify-center" onClick={handleClick}>
                   <Button
                     text="Order Now"
                     bgColor={"bg-primary"}
                     textColor={"text-white"}
                   />
-                </a>
               </div>
             </div>
           </div>
