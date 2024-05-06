@@ -4,7 +4,7 @@ import Image2 from '../../assets/category/watch.png';
 import Image3 from '../../assets/category/macbook.png';
 import Button from '../Shared/Button';
 
-const Category = () => {
+const Category = ({handleOrderPopup}) => {
   return (
     <div className="py-8">
       <div className="container mx-auto px-4">
@@ -14,7 +14,9 @@ const Category = () => {
               <p className="text-gray-400 mb-1">Enjoy</p>
               <p className="text-2xl font-semibold">With</p>
               <p className="text-4xl font-bold opacity-20">Earphone</p>
+              <div onClick={handleOrderPopup}>
               <Button text="Browse" bgColor="bg-primary" textColor="text-white" />
+              </div>
             </div>
             <img className="absolute bottom-0 right-0 w-60" src={Image1} alt="Earphone" />
           </div>
@@ -23,7 +25,9 @@ const Category = () => {
               <p className="text-gray-400 mb-1">Enjoy</p>
               <p className="text-2xl font-semibold">With</p>
               <p className="text-4xl font-bold opacity-40">Gadget</p>
+              <div onClick={handleOrderPopup}>
               <Button text="Browse" bgColor="bg-white" textColor="text-yellow-400" />
+              </div>
             </div>
             <img className="absolute -right-4 top-8 w-60" src={Image2} alt="Watch" />
           </div>
@@ -32,7 +36,9 @@ const Category = () => {
               <p className="text-gray-400 mb-1">Enjoy</p>
               <p className="text-2xl font-semibold">With</p>
               <p className="text-4xl font-bold opacity-40">Laptops</p>
+              <div onClick={handleOrderPopup}>
               <Button text="Browse" bgColor="bg-white" textColor="text-primary" />
+              </div>
             </div>
             <img className="absolute -right-4 top-8 w-60" src={Image3} alt="MacBook" />
           </div>
